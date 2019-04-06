@@ -15,7 +15,13 @@ p {
     font-size: 14px;
     color: #fff;
 }
- 
+
+h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    color: #fff;
+}
+
 .button {
   background-color: #00703c; /* Green */
   border: none;
@@ -26,7 +32,11 @@ p {
   display: inline-block;
   font-size: 12px;
 }
+<<<<<<< HEAD
+
+=======
  
+>>>>>>> 2d9f28c88b52eea7150107f90ef866095b02ff92
 /* Add a black background color to the top navigation bar */
 .topnav {
   overflow: hidden;
@@ -99,7 +109,28 @@ p {
   clear: both;
   display: table;
 }
+<<<<<<< HEAD
+
+.box1 {
+  float: left;
+  width: 66%;
+  padding: 50px;
+  opacity: 0.7;
+  height: 600px;
+}
+
+.box2 {
+  float: right;
+  width: 32%;
+  padding: 50px;
+  opacity: 0.7;
+  height: 600px;
+}
+
+
+=======
  
+>>>>>>> 2d9f28c88b52eea7150107f90ef866095b02ff92
 ////////////////////////////////
  
 header {
