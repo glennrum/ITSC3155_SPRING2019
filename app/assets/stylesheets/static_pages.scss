@@ -1,4 +1,4 @@
-// Place all the styles related to the Welcome controller here.
+// Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 div {
@@ -32,10 +32,103 @@ h1 {
   display: inline-block;
   font-size: 12px;
 }
+ 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ 
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  background-color: #1b1e14;
+}
+
+
+.box1 {
+  float: left;
+  width: 66%;
+  padding: 50px;
+  height: 600px;
+  background-color: #1b1e14;
+}
+
+.box2 {
+  float: right;
+  width: 32%;
+  padding: 50px;
+  height: 600px;
+  background-color: #1b1e14;
+}
+
+.box3 {
+  float: left;
+  width: 100%;
+  padding: 50px;
+  height: 600px;
+  background-color: #1b1e14;
+}
+
+ 
+header {
+  font: 400 1em/1.5 "Neuton";
+  background: transparent;
+  color: rgba(255,255,255,.25);
+  text-align: center;
+  margin: 0;
+  position: center;
+}
+
+p.header {
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    display: inline-block;
+    padding: 50px;
+    position: top;
+    width: 40em;
+    margin-left: auto;
+ 
+  span {
+ 
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+      display: block;
+      margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+ 
+/* Clip Background Image */
+ 
+      background: url(https://i.imgur.com/EktMnQM.png) repeat-y;
+      -webkit-background-clip: text;
+      background-clip: text;
+ 
+/* Animate Background Image */
+ 
+      -webkit-text-fill-color: transparent;
+      -webkit-animation: aitf 80s linear infinite;
+ 
+/* Activate hardware acceleration for smoother animations */
+ 
+      -webkit-transform: translate3d(0,0,0);
+      -webkit-backface-visibility: hidden;
+ 
+  }
+}
+ 
+/* Animate Background Image */
+ 
+@-webkit-keyframes aitf {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
 /* Add a black background color to the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: rgba(100,100,100,.2);
+  background-color: #1b1e14;
 }
  
 /* Style the links inside the navigation bar */
@@ -90,86 +183,4 @@ h1 {
  
 * {
   box-sizing: border-box;
-}
- 
-.box {
-  float: left;
-  width: 33.33%;
-  padding: 50px;
-  opacity: 0.7;
-}
- 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.box1 {
-  float: left;
-  width: 66%;
-  padding: 50px;
-  opacity: 0.7;
-  height: 600px;
-}
-
-.box2 {
-  float: right;
-  width: 32%;
-  padding: 50px;
-  opacity: 0.7;
-  height: 600px;
-}
-
- 
-header {
-  font: 400 1em/1.5 "Neuton";
-  background: transparent;
-  color: rgba(255,255,255,.25);
-  text-align: center;
-  margin: 0;
-}
- 
-p1 {
-    text-transform: uppercase;
-    letter-spacing: .5em;
-    display: inline-block;
-    padding: 50px;
-    position: top;
-    width: 40em;
-    margin-left: auto;
- 
-  span {
- 
-    font: 700 4em/1 "Oswald", sans-serif;
-    letter-spacing: 0;
-    padding: .25em 0 .325em;
-      display: block;
-      margin: 0 auto;
-    text-shadow: 0 0 80px rgba(255,255,255,.5);
- 
-/* Clip Background Image */
- 
-      background: url(https://i.imgur.com/EktMnQM.png) repeat-y;
-      -webkit-background-clip: text;
-      background-clip: text;
- 
-/* Animate Background Image */
- 
-      -webkit-text-fill-color: transparent;
-      -webkit-animation: aitf 80s linear infinite;
- 
-/* Activate hardware acceleration for smoother animations */
- 
-      -webkit-transform: translate3d(0,0,0);
-      -webkit-backface-visibility: hidden;
- 
-  }
-}
- 
-/* Animate Background Image */
- 
-@-webkit-keyframes aitf {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
 }

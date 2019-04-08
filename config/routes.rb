@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  get 'about/new'
-  resources :about
-  get 'welcome/index'
-  root 'welcome#index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'static_pages#index'
+  get  '/about',   to: 'static_pages#about'
+  get  '/login',   to: 'static_pages#login'
+  get  '/profile',   to: 'static_pages#profile'
 end

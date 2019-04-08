@@ -1,0 +1,19 @@
+<header class="header">
+    
+<p class="header">
+  ITCS 3155 PROJECT
+  <span>
+    UNCC BLOG
+  </span>
+  &mdash; GROUP 12 &mdash;
+</p>
+ 
+      <div class="topnav">
+         <%= link_to "HOME", root_path, :class => current_class?(root_path)  %>
+         <%= link_to "ABOUT", about_path, :class => current_class?(about_path)  %>
+         <%= link_to "PROFILE", profile_path, :class => current_class?(profile_path)  %>
+         <%= link_to "LOGIN OR REGISTER", login_path, :class => current_class?(login_path)  %>
+         <input type="text" placeholder="Search...">
+      </div>
+</header>
+      
